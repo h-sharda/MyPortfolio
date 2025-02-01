@@ -1,8 +1,54 @@
 <%- include("partials/header.ejs") %>
 
 <section id="about">
-    <h2>About Me</h2>
-    <p>I am a passionate web developer who loves creating modern, interactive, and user-friendly websites.</p>
+    <div class="container">
+        <h2>About Me</h2>
+
+        <div class="summary">
+            <h3>Summary</h3>
+            <p>I am a pre final year engineering student.</p>
+        </div>
+
+        <div class="education">
+            <h3>Education</h3>
+            <div class="education-container">
+                <div class="edu-box">
+                    <h4>Graduation</h4>
+                    <p> Netaji Subash University of Technology (Delhi-78)</p>
+                    <p> <a href = "/about/btech"> B.Tech in Electronics and Communication Engineering</a> (2022- current)</p>
+                    <p> CGPA: 8.3</p>
+                </div>
+        
+                <div class="edu-box">
+                    <h4>Senior Secondary Education</h4>
+                    <p> Sneh International School (Delhi-92)</p>
+                    <p> CBSE board</p>
+                    <p><a href="/about/xii">XII<sup>th</sup></a> (2022): 97.8%</p>
+                    <p><a href="/about/xii">XII<sup>th</sup></a> (2020): 93.4%</p>
+                </div>
+            </div>
+        </div>        
+        
+        <div class="hobbies">
+            <h3>Hobbies & Interests</h3>
+            <ul class="hobbies-list">
+                <li><a href="/about/sports">Sports</a></li>
+                <li><a href="/about/gaming">Gaming</a></li>
+                <li><a href="/about/geopolitics">Geo Politics</a></li>
+                <li><a href="/about/travel">Travel</a></li>
+                <li><a href="/about/electronics">Electronics</a></li>
+            </ul>
+        </div>
+
+        <div class="achievements">
+            <h3>achievements</h3>
+            <ul class="achievement-list">
+                <li><a href="/about/xii-certifiactes">XII<sup>th</sup> distinction certifiactes</a>
+                    : Topped XII<sup>th</sup> board exams and achieved 5 certificates of distinction for outstanding performance.</li>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <%- include("partials/footer.ejs") %>

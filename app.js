@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
+const PORT = process.env.PORT || 8000;
+
 // Set EJS as the templating engine
 app.set("view engine", "ejs");
 
@@ -17,5 +19,4 @@ app.get("/skills", (req, res) => res.render("skills", { pageCSS: "skills.css" })
 app.get("/contact", (req, res) => res.render("contact", { pageCSS: "contact.css" }));
 
 // Start server
-const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
