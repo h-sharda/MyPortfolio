@@ -26,7 +26,7 @@
 }
 
 #about h4 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: cyan;
     margin-bottom: 15px;
 }
@@ -53,6 +53,21 @@
     transition: transform 0.3s ease;
 }
 
+.edu-box p:first-of-type {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+.edu-box p:not(:first-of-type) {
+    font-size: 0.9rem;
+    margin: 8px 0;
+    line-height: 1.4;
+    color: #cccccc;
+}
+
 .edu-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
@@ -63,39 +78,25 @@
     line-height: 1.5;
 }
 
-/* Hobbies Section */
-.hobbies-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+/* Hobbies & Achievements Section */
+
+.hobbies-list , .achievement-list {
     list-style: none;
     padding: 20px 0;
 }
 
-.hobbies-list li {
-    background: #2a2a2a;
-    padding: 15px 25px;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-}
-
-.hobbies-list li:hover {
-    background: #333;
-    transform: scale(1.05);
-}
-
-/* Achievements Section */
-.achievement-list {
-    list-style: none;
-    padding: 20px 0;
-}
-
-.achievement-list li {
+.hobbies-list li , .achievement-list li {
     background: #2a2a2a;
     padding: 20px;
     margin-bottom: 15px;
     border-radius: 10px;
     line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.hobbies-list li:hover, .achievement-list li:hover {
+    background: #333;
+    transform: scale(1.05);
 }
 
 /* Links Styling */
