@@ -1,0 +1,14 @@
+#dsa {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#dsa ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#dsa li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}

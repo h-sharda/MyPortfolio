@@ -1,0 +1,9 @@
+#contact {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: lightgray;
+}
