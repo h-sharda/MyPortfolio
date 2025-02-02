@@ -15,7 +15,7 @@
                 <div class="edu-box">
                     <h4>Under Graduation</h4>
                     <p> Netaji Subash University of Technology (Delhi-78)</p>
-                    <p> <a href = "/about/btech"> B.Tech in Electronics and Communication Engineering</a> (2022- current)</p>
+                    <p> B.Tech in Electronics and Communication Engineering (2022- current)</p>
                     <p> CGPA: 8.3</p>
                 </div>
         
@@ -31,24 +31,52 @@
         
         <div class="hobbies">
             <h3>Hobbies & Interests</h3>
-            <ul class="hobbies-list">
-                <li><a href="/about/sports">Sports</a></li>
-                <li><a href="/about/gaming">Gaming</a></li>
-                <li><a href="/about/geopolitics">Geo Politics</a></li>
-                <li><a href="/about/travel">Travel</a></li>
-                <li><a href="/about/electronics">Electronics</a></li>
-            </ul>
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('sports')">Sports</button>
+                    <div id="sports" class="dropdown-content">
+                        <p>More details about sports.</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('gaming')">Gaming</button>
+                    <div id="gaming" class="dropdown-content">
+                        <p>More details about gaming.</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('geopolitics')">Geo Politics</button>
+                    <div id="geopolitics" class="dropdown-content">
+                        <p>More details about geopolitics.</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('travel')">Travel</button>
+                    <div id="travel" class="dropdown-content">
+                        <p>More details about travel.</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('electronics')">Electronics</button>
+                    <div id="electronics" class="dropdown-content">
+                        <p>More details about electronics.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+                 
 
         <div class="achievements">
-            <h3>achievements</h3>
+            <h3>Achievements</h3>
             <ul class="achievement-list">
-                <li><a href="/about/xii-certifiactes">XII<sup>th</sup> distinction certifiactes</a>
+                <li><a href="/about/xii-certifiactes">XII<sup>th</sup> distinction certificates</a>
                     : Topped XII<sup>th</sup> board exams and achieved 5 certificates of distinction for outstanding performance.</li>
                 </li>
             </ul>
         </div>
     </div>
 </section>
+
+<script src="/js/about.js"></script>
 
 <%- include("partials/footer.ejs") %>

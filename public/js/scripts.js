@@ -1,10 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (event) {
-            event.preventDefault();
-            document.querySelector(this.getAttribute("href")).scrollIntoView({
-                behavior: "smooth"
-            });
-        });
-    });
+document.getElementById("toggle-footer").addEventListener("click", function () {
+    const footer = document.getElementById("footer");
+    const toggleIcon = document.getElementById("toggle-icon");
+    
+    if (footer.style.transform === "translateY(100%)") {
+        footer.style.transform = "translateY(0)";
+        toggleIcon.src = "/images/logos/down-arrow.png";
+    } else {
+        footer.style.transform = "translateY(100%)";
+        toggleIcon.src = "/images/logos/up-arrow.png";
+    }
 });

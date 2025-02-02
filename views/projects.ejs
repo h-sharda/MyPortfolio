@@ -2,16 +2,107 @@
 
 <section id="projects">
     <h2>Projects</h2>
-    <div class="projects-container">
+    
+    <div class="project-category">
+        <h3>Live Projects</h3>
+    </div>
+
+    <div class="live-projects-container">
         <div class="project-card">
-            <h3>Project One</h3>
-            <p>A brief description of your project.</p>
+            <h3>Chess Simulator</h3>
+            <p>A Simple chess simulator and a bot build from scratch.</p>
+            <div class = "Technologies">
+                <p>Technologies used: Java, Java Swing</p>
+            </div>
+            <div class="sources">
+                <a href="https://github.com/h-sharda/Chess">Github</a>
+                <a href="https://drive.google.com/drive/folders/1wgBey4nLw1aj_r0Yd5_l05VOjnCSRKLZ">Download</a>
+            </div>
         </div>
         <div class="project-card">
-            <h3>Project Two</h3>
-            <p>A brief description of your project.</p>
+            <h3>TicTacToe Simulator</h3>
+            <p>A highly customizable Tic Tac Toe build from scratch.</p>
+            <div class = "Technologies">
+                <p>Technologies used: Java, Java Swing</p>
+            </div>
+            <div class="sources">
+                <a href="https://github.com/h-sharda/TicTacToe">Github</a>
+                <a href="https://drive.google.com/drive/folders/1I66EkQfUw9dlWNDA7CpGiFgR8cMNYq7_">Download</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>NPTEL result scrapper</h3>
+            <p>Gets results of all the students with their email and birthday.</p>
+            <div class = "Technologies">
+                <p>Technologies used: Python, Selenium, HTML, CSS, Javascript</p>
+            </div>
+            <div class="sources">
+                <a href="https://github.com/h-sharda/NPTEL-Scraper">Github</a>
+                <a href="">Live</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>Daily Journaling website</h3>
+            <p>A social media website to post daily journals.</p>
+            <div class = "Technologies">
+                <p>Technologies used: Java, Java Swing</p>
+            </div>
+            <div class="sources">
+                <a href="https://github.com/h-sharda/Daily-Journal">Github</a>
+                <a href="">Live</a>
+            </div>
         </div>
     </div>
+    
+    <div class="project-category">
+        <h3>Ongoing Projects</h3>
+    </div>
+
+    <div class = "ongoing-projects-container">
+        <div class="project-card">
+            <h3>Games Website</h3>
+            <p>Website that hosts games like chess, wordle, snake and ladders, tic tac toe </p>
+            <div class = "Technologies">
+                <p>Technologies used: HTML, CSS, Javascript, node.js, express.js</p>
+            </div>
+            <div class="sources">
+                <a href="https://github.com/h-sharda/MyGames">Github</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>IoT Workshop Project</h3>
+            <p>Keep a record of all the vehicles entering and exiting the college premisis.</p>
+            <div class = "Technologies">
+                <p>Technologies used: Aurdino, ESP-32, MERN stack, AI-ML</p>
+            </div>
+            <div class="sources">
+                <a href="https://github.com/h-sharda/Chess">Github</a>
+            </div>
+        </div>        
+    </div>
+
 </section>
+
+<script>
+    let currentOpen = null;  // Track which dropdown is currently open
+
+    function toggleDropdown(id) {
+        const content = document.getElementById(id);
+
+        // If the clicked dropdown is already open, close it
+        if (currentOpen === id) {
+            content.style.display = "none";
+            currentOpen = null;
+        } else {
+            // If another dropdown is open, close it
+            if (currentOpen !== null) {
+                document.getElementById(currentOpen).style.display = "none";
+            }
+            // Open the clicked dropdown
+            content.style.display = "block";
+            currentOpen = id;
+        }
+    }
+</script>
 
 <%- include("partials/footer.ejs") %>

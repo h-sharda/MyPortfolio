@@ -16,7 +16,7 @@ app.get("/about", (req, res) => res.render("about", { pageCSS: "about.css" }));
 app.get("/projects", (req, res) => res.render("projects", { pageCSS: "projects.css" }));
 app.get("/dsa", (req, res) => res.render("dsa", { pageCSS: "dsa.css" }));
 app.get("/skills", (req, res) => res.render("skills", { pageCSS: "skills.css" }));
-app.get("/contact", (req, res) => res.render("contact", { pageCSS: "contact.css" }));
+app.get("/gallery", (req, res) => res.render("gallery", { pageCSS: "gallery.css" }));
 
 // Start server
 app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
